@@ -39,7 +39,16 @@
                         <artifactId>asciidoctorj-pdf</artifactId>
                         <version>2.3.4</version>
                     </dependency>
+                    <dependency>
+                        <groupId>org.asciidoctor</groupId>
+                        <artifactId>asciidoctorj</artifactId>
+                        <version>2.5.10</version>
+                    </dependency>
                 </dependencies>
+                <configuration>
+                    <sourceDirectory>src/main/doc/asciidoc</sourceDirectory>
+                    <outputDirectory>target/docs</outputDirectory>
+                </configuration>
                 <executions>
                     <execution>
                         <id>output-pdf</id>
@@ -47,19 +56,21 @@
                         <goals>
                             <goal>process-asciidoc</goal>
                         </goals>
+                        <configuration>
+                            <backend>pdf</backend>
+                            <doctype>book</doctype>
+                            <attributes>
+                                <pdf-themesdir>${project.basedir}/src/main/doc/asciidoc/theme</pdf-themesdir>
+                                <pdf-theme>pegus-digital</pdf-theme>
+                                <pdf-style>pegus-digital</pdf-style>
+                                <pdf-fontsdir>${project.basedir}/src/main/doc/asciidoc/fonts</pdf-fontsdir>
+                                <tabsize>4</tabsize>
+                                <pagenums/>
+                                <toc/>
+                            </attributes>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <sourceDirectory>src/main/doc/asciidoc</sourceDirectory>
-                    <outputDirectory>target/docs</outputDirectory>
-                    <backend>pdf</backend>
-                    <doctype>book</doctype>
-                    <attributes>
-                        <pdf-themesdir>${project.basedir}/src/main/asciidoc/theme</pdf-themesdir>
-                        <pdf-theme>pegus-digital</pdf-theme>
-                        <pdf-fontsdir>${project.basedir}/src/main/asciidoc/fonts</pdf-fontsdir>
-                    </attributes>
-                </configuration>
             </plugin>
         </plugins>
     </build>

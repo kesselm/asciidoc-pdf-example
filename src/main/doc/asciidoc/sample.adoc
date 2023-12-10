@@ -18,3 +18,18 @@ Some dummy content
 == This is another chapter
 
 https://www.wimdeblauwe.com/blog/2019/2019-12-20-customization-of-asciidoctor-pdf-output/
+
+https://docs.asciidoctor.org/asciidoc/latest/macros/ui-macros/
+
+https://github.com/asciidoctor/asciidoctor-pdf/blob/v1.5.0.beta.5/docs/theming-guide.adoc#attribute-references
+
+
+arc42
+
+
+https://engineering.dena.com/blog/2023/05/generating-pdf-documents-from-asciidoc/
+
+
+https://doctoolchain.org/docToolchain/v2.0.x/015_tasks/03_task_publishToConfluence.html
+
+https://bcouetil.gitlab.io/academy/BP-asciidoc.html#configure-maven-plugin
