@@ -1,0 +1,7 @@
+header:
+  height: $base_line_height_length * 3
+recto:
+  left:
+    content: image:/home/sifu/IdeaProjects/asciidoc-pdf-example/asciidoc-pdf-example/src/main/doc/asciidoc/images/Raufeld.png[width=120]
+  center:
+    content: '{document-title}'

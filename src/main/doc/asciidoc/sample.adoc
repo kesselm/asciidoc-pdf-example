@@ -1,0 +1,20 @@
+= Example Documentation
+
+:imagesdir: ./images
+
+:icons: font
+:toc:
+:toclevels: 3
+:numbered:
+
+== This is a chapter in the documentation
+
+There is some content here
+
+=== This is a sub-chapter
+
+Some dummy content
+
+== This is another chapter
+
+https://www.wimdeblauwe.com/blog/2019/2019-12-20-customization-of-asciidoctor-pdf-output/
